@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - SuperShop</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>🛒 Your Cart</h1>
+    <nav>
+      <a href="index.html" class="main-btn">🏠 Home</a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <div id="cart-items"></div>
+
+      <label>Shipping:
+        <select id="shipping">
+          <option value="0">Standard - Free</option>
+          <option value="5">Express - $5</option>
+        </select>
+      </label>
+
+      <label>Coupon Code:
+        <input type="text" id="coupon-code" placeholder="Enter code">
+      </label>
+
+      <button id="apply-coupon" class="main-btn">Apply</button>
+      <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+      <a href="checkout.html"><button class="main-btn">Proceed to Checkout</button></a>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
